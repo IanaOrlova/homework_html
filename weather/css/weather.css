@@ -7,6 +7,9 @@ font-family :“Lucida Sans Unicode”, “Lucida Grande”, sans-serif;
 * {
     box-sizing: border-box;
 }
+*{
+    transition: all .1s ease-in;
+}
 body{
     background-color: #3399cc;
     border: 15px solid #2b81ac;
