@@ -1,0 +1,104 @@
+html, body {height: 100%;}
+* {
+    font-family: Arial, sans-serif;
+    margin: 0 0;
+    padding: 0 0;
+    box-sizing: border-box;
+}
+/*------------------- Строка поиска и кнопка отправки--------------*/
+.button {
+    height:90px;
+    text-decoration: none;
+    margin: 20px 0 0 280px;
+}
+.button:hover{
+    height: 110px;
+    outline: none;
+}
+.search{
+    border: none;
+    background-color: #f1f1f1;
+    font-size: 100px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin: 30px 0 0 12%;
+    width: 50%;
+    outline: none;
+    color: #ec5a62;
+    line-height: 140px;
+}
+
+input[type="text"]::placeholder {
+    color: #c2c2c2;
+}
+/*-----------------------списки--------------------------------------*/
+body{
+    background-color: #f1f1f1;
+}
+header{
+    margin: 20px auto 0;
+    height:  180px;
+}
+
+div{
+    width: 80%;
+    margin: 5% auto 0;
+}
+aside{
+    display: inline-block;
+    width: 370px;
+    margin: 0 0 0 30px;
+}
+li{
+    background-color: rgba(118,117,128,0.05);
+    background-color: #ebebeb;
+    border-radius: 8px;
+    width: 350px;
+    margin: 4px 0 0 0;
+    display: inline-block;
+}
+.name{
+    color: rgba(145,145,145,0.7);
+    font-weight: 600;
+}
+
+h2{
+    color: #c2c2c2;
+    font-size: 1em;
+    font-weight: 800;
+    letter-spacing: 1px;
+}
+p {
+    font-size: 13px;
+    padding: 0 0 0 5%;
+    display: inline-block;
+}
+
+a{
+    text-decoration: none;
+    line-height: 60px;
+    vertical-align: top;
+}
+/*------------------------ аватарки и hover------------*/
+li:hover {
+    background-color: #e4e4e6;
+
+}
+li:hover p {
+    color: #ec5a62;
+}
+
+.circle{
+    border-radius: 50px;
+}
+
+img{
+    padding: 7px 0 7px 7px;
+    vertical-align: bottom;
+}
+
+
+
+
+
+
