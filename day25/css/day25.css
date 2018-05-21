@@ -13,14 +13,16 @@ h2
 main{
     margin: 140px 126px;
     padding: 0 85px 100px 85px;
-    height: 750px;
     font-size: 18px;
     line-height: 34px;
-    box-shadow: 0 0 70px rgba(0, 0, 0, 0.11);
+    box-shadow: 0 4px 68px 0 rgba(0, 0, 0, 0.1);
+    height: 750px;
+
 }
 p{
     white-space: pre;
     color: #7a7a7a;
+
 }
 .first {margin: 60px 0 0 92px;}
 
