@@ -5,73 +5,73 @@ html, body {height: 100%;}
     padding: 0 0;
 }
 body{
-    width: 1920px;
-    height: 1892px;
-    background-color:  #23232e;
+   width: 1920px;
+   height: 1852px;
 }
-
+/*----------------------------------верхний блок---------------*/
 header{
     background-color:  #23232e;
-    width: 1920px;
-    height: 45%;
-
 }
-main{
-    background-image: url('../img/bg.png');
-    background-repeat: no-repeat;
-    background-position: bottom;
-    width: 1920px;
-    height: 62%;
-    background-color:  white;
-}
-
-.love{
-     color:  #ffffff;
-     font-size: 80px;
-     font-weight: 700;
-     line-height: 30px;
-     text-align: center;
-     margin: 178px 0 40px 0;
-     white-space: pre;
- }
-.glad{
-     color:  #ffffff;
-     font-size: 18px;
-     font-weight: 400;
-     line-height: 30px;
-     text-align: center;
-     margin: 56px 0 0 55px;
-      width: 420px;
- }
 
 .imeg {
+    width: 134px;
+    height: 134px;
+    position: relative;
+    left: 205px;
+    display: inline-block;
+}
 
-     width: 134px;
-     height: 134px;
-     position: relative;
-     left: 205px;
-     display: inline-block;
- }
+.logo{
+    display: inline-block;
+    padding: 4% 35% 0;
+    background-size: cover;
+}
+h2{
+    color:  #ffffff;
+    font-size: 80px;
+    font-weight: 700;
+    line-height: 30px;
+    text-align: center;
+    padding: 178px 0 40px 0;
+    white-space: pre;
+}
+.im_glad{
+    color:  #ffffff;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+    text-align: center;
+    padding: 40px 9% 0;
 
+}
 .button{
-     width: 45px;
-     height: 45px;
-     position: relative;
-     left: 130px ;
-     margin: 110px 0 50px 0;
-     outline: none;
- }
+    width: 45px;
+    height: 45px;
+    position: relative;
+    left: 125px ;
+    padding: 30% 0 10% 0 ;
+
+}
 
 .button:active{
     width: 50px;
     height: 50px;
 }
-.logo{
-    width: 544px;
-    height: 720px;
-    display: inline-block;
-    margin: 76px 660px 27px 660px;
+
+/*--------------------------нижний блок-------------*/
+/*-----------------фонвый рисунок----------------*/
+.background{
+    background-image: url('../img/bg.png');
+    background-repeat: no-repeat;
+    height: 100%;
+    background-position: bottom;
 }
+main{
+    height: 57.2%;
+}
+/*-----------------------для фонового рисунка задаем высоту 100% а для блока, который он покрывает отдельную высоту,
+ тогда рисунок смещается до нужных нам размеров---------------*/
+
 .name{
     color:  #464b4f;
     font-size: 30px;
@@ -79,21 +79,21 @@ main{
     line-height: 42px;
     text-align: center;
     white-space: pre;
-    padding: 110px 190px 0 0;
+    padding: 2% 15% 0 8% ;
     text-indent: 5em;
 }
-h2{
+h3{
     color:  #464b4f;
     font-size: 80px;
     font-weight: 700;
     line-height: 36px;
     text-align: center;
-    padding: 120px 50px 0 0;
+    padding: 3% 0 0 0;
 }
-
-.lately,
-.creating,
-.everyone{
+/*------------------------колонки------------*/
+.template,
+.brand,
+.dreams{
     color:  #888a8b;
     font-size: 18px;
     font-weight: 400;
@@ -102,26 +102,27 @@ h2{
     width: 300px;
 }
 
-.lately1,
-.creating1,
-.everyone1{
+.template1,
+.brand1,
+.dreams1{
     font-size: 18px;
     font-weight: 700;
     line-height: 42px;
     text-align: left;
-    margin: 82px 0 0  454px;
+    padding: 82px 0 0  490px;
+
 }
 
-.creating1{margin: 82px 0 0  229px;}
+.brand1{padding:82px 0 0  229px;}
 
-.everyone1{margin: 82px 0 0  255px;}
+.dreams1{padding:82px 0 0  255px;}
 
 li{display: inline-block;margin:0;float:left}
 
-.lately{padding: 22px 0 0 454px;}
+.template{padding: 22px 0 10px 490px;}
 
-.creating{padding: 22px 0 0 25px;}
+.brand{padding: 22px 0 10px 25px;}
 
-.everyone{padding: 22px 0 0 19px;}
+.dreams{padding: 22px 0 10px 19px;}
 
 
