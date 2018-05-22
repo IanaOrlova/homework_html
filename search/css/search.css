@@ -9,7 +9,7 @@ html, body {height: 100%;}
 .button {
     height:90px;
     text-decoration: none;
-    margin: 20px 0 0 280px;
+    margin: 2% 0 0 21%;
 }
 .button:hover{
     height: 110px;
@@ -41,19 +41,20 @@ header{
 }
 
 div{
-    width: 80%;
+    width: auto;
     margin: 5% auto 0;
+    padding: 0 0 0 8%;
 }
 aside{
     display: inline-block;
-    width: 370px;
-    margin: 0 0 0 30px;
+    width: 25%;
+    margin: 0 0 0 4%;
 }
 li{
     background-color: rgba(118,117,128,0.05);
     background-color: #ebebeb;
     border-radius: 8px;
-    width: 350px;
+    width: 100%;
     margin: 4px 0 0 0;
     display: inline-block;
 }
