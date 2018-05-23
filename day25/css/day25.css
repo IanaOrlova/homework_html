@@ -6,39 +6,37 @@ html, body {height: 100%;}
     font-weight: lighter;
 }
 h1,
-h2
+.first_letter
 { font-family: 'Playfair Display', serif;
 
 }
 main{
-    margin: 140px 126px;
-    padding: 0 85px 100px 85px;
+    margin: 7% 8%;
+    padding: 0 0 2% 5%;
     font-size: 18px;
     line-height: 34px;
     box-shadow: 0 4px 68px 0 rgba(0, 0, 0, 0.1);
-    height: 750px;
-
 }
 p{
     white-space: pre;
     color: #7a7a7a;
-
 }
 .first {margin: 60px 0 0 92px;}
 
-.second {margin: 30px 0;}
+.second {padding: 30px 0;}
 
 h1{
     position: relative;
     top: 80px;
 }
 
-h2{
+.first_letter{
     font-size: 115px;
     position: relative;
     top: 120px;
     left: 8px;
     width: 30px;
+    color: black;
 }
 
 span{
@@ -48,30 +46,32 @@ span{
     font-style: normal;
 }
 
-h3{
+blockquote{
     font-style: italic;
     font-size: 23px;
     color: #7a7a7a;
-    margin: 30px 0;
+    padding: 30px 0;
     white-space: pre;
 }
 
-h6{
-    color: #eaa258;
+input{
+    background: none;
     border: 1px solid #eaa258;
     width: 235px;
-    height: 37px;
-    margin: 0 18px;
     text-align: center;
-    font-size: 16px;
     white-space: pre;
     font-weight: 600;
-    padding: 9px 0;
+    padding: 9px 0 ;
+    color: #eaa258;
 }
-h6:active{
+
+input:active{
     background-color: #eaa258;
     color: white;
+}
 
+.burron{
+    text-decoration: none;
 }
 
 
