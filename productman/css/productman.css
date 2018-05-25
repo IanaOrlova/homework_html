@@ -1,0 +1,261 @@
+html, body {height: 100%;}
+* {
+    font-family: 'Roboto', 'Raleway', sans-serif;
+    margin: 0 0;
+    padding: 0 0;
+    box-sizing: border-box;
+}
+aside,
+li,
+h5
+{
+    display: inline-block;
+}
+
+/*--------------------------------------фон+центрированная середина+градиент----------*/
+body{
+    background: #eeeeee;
+}
+
+.central_part{
+    padding-left:9%;
+    padding-right: 9%;
+    display: inline-block;
+    width: auto;
+    background: radial-gradient(circle closest-corner at 65% 20%,#fff,#fefefe 30%, #eeeeee );
+}
+/*------------------------------навигация----------------------------------------------------------*/
+
+header{
+    margin: 5% 0 0 0 ;
+}
+h5{
+    padding: 1% 0 8% 0 ;
+    font-family: 'Roboto';
+    color: #303030;
+    font-size: 48px;
+    font-weight: 900;
+    letter-spacing: 1.2px;
+}
+header ul{
+    float: right;
+    padding-top: 30px;
+}
+
+header ul li a{
+    text-decoration: none;
+    color: #303030;
+    font-family: 'Roboto';
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: 0.45px;
+}
+
+header ul li{
+    margin: 0 25px;
+}
+/*---------------------------------------------слайд-------------------------*/
+aside {
+    width: 50%;
+    text-align: right;
+}
+h2{
+    color: #303030;
+    font-family: "Raleway";
+    font-size: 150px;
+    font-weight: 900;
+    line-height: 150px;
+    text-transform: uppercase;
+    letter-spacing: 3.75px;
+    display: inline-block;
+}
+
+aside p{
+    color: #303030;
+    font-family: Roboto;
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 36px;
+    letter-spacing: 0.6px;
+    margin: 5% 0 0 2%;
+}
+
+aside p:nth-child(3){
+    color: #e10011;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+aside p:nth-child(4){
+    font-weight: 700;
+    font-size: 40px;
+    padding: 7% 0 0 0;
+}
+.handsfree{
+    margin: 0 7%;
+   display: inline-block;
+    position: relative;
+    bottom: 110px;
+}
+
+.dot{color:#e10011;}
+
+/*-----------------------------------------середина-------------------------------*/
+.middle{
+    background-color: white;
+    margin: 8% 0;
+}
+
+h3{
+    color: #303030;
+    font-family: "Raleway";
+    font-size: 48px;
+    font-weight: 900;
+    line-height: 80px;
+    letter-spacing: 1.2px;
+    padding-top: 6%;
+    text-align: center;
+}
+.underline{
+     text-align: center;
+     padding: 0 40% 0 ;
+ }
+
+.underline1{
+    color: #303030;
+    font-family: Raleway;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.45px;
+    text-align: center;
+    padding: 10px 26% 0 26%;
+    display: inline-block;
+}
+
+.middle ul li:first-child{
+    width: 692px;
+    margin: 4% 0 0 7%;
+    background-color: #eeeeee;
+    border-radius: 7px;
+    text-align: center;
+}
+
+.middle ul li:nth-child(2){
+    background-color: #eeeeee;
+    border-radius: 7px;
+    margin: 0 7% 0 3%;
+    height: 391px;
+    width: 325px;
+    position: relative;
+    bottom: 26px;
+    text-align: right;
+}
+
+.middle ul li:nth-child(3){
+    margin: 0 0 6% 95px;
+}
+
+.red{
+    position: relative;
+    bottom: 463px;
+    left: 65px;
+    margin: 0 0 0 7%;
+    display: inline-block;
+}
+
+.red_text{
+    position: relative;
+    bottom: 590px;
+    left: 90px;
+    text-align: left;
+    color: white;
+    font-family: "Roboto";
+    font-size: 30px;
+    font-weight: 900;
+    margin: 0 0 0 9%;
+}
+
+.middle ul li:nth-child(4){
+    margin: 15px 0 0 40px;
+
+}
+
+.middle ul li:nth-child(5){
+    margin: 0 0 0 40px;
+}
+
+div .red_box:hover{opacity: 0;}
+
+.red_box{
+   height: 0;
+    width: 325px;
+}
+.red_box:after{
+    content: "";
+    clear: both;
+    display: table;
+}
+/*--------------------------------нижняя часть---------------------*/
+footer{
+    margin:  5% 0 1% 0 ;
+    text-align: center;
+}
+
+footer h3{
+    padding: 0 28% 0 ;
+    text-align: center;
+    display: inline-block;
+}
+form{padding: 3% 0 7% 0;}
+
+.search{
+    color: #979797;
+    font-family: "Raleway";
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.45px;
+    font-style: italic;
+    border-radius:50px 0 0 50px;
+    padding: 15px 0 15px 35px;
+    border: none;
+    width: 500px;
+}
+
+.button{
+    background-color: #e10011;
+    color: #ffffff;
+    font-family: "Roboto";
+    font-size: 18px;
+    font-weight: 900;
+    padding: 17px 45px;
+    border: none;
+    border-radius: 0 50px 50px 0;
+    margin: 0 0 0 -3px;
+}
+
+.social{padding: 7% 0 15% 0;}
+
+footer p {
+    color: #303030;
+    font-family: "Raleway";
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.45px;
+    padding: 0 27%;
+}
+
+span{
+    color: #979797;
+    font-family: Raleway;
+}
+
+
+
+
+
+
+
+
