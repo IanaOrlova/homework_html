@@ -153,14 +153,13 @@ h3{
 }
 
 .middle ul li:nth-child(3){
-    margin: 0 0 6% 95px;
+    margin: 0 0 6% 97px;
 }
 
 .red{
     position: relative;
-    bottom: 463px;
-    left: 65px;
-    margin: 0 0 0 7%;
+    bottom: 464px;
+    left: 90px;
     display: inline-block;
 }
 
@@ -177,12 +176,12 @@ h3{
 }
 
 .middle ul li:nth-child(4){
-    margin: 15px 0 0 40px;
+    margin: 15px 0 0 38px;
 
 }
 
 .middle ul li:nth-child(5){
-    margin: 0 0 0 40px;
+    margin: 0 0 0 38px;
 }
 
 div .red_box:hover{opacity: 0;}
