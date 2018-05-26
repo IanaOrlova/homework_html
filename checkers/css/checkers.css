@@ -31,7 +31,6 @@
     width: 55px;
     height: 55px;
     border-radius: 50px;
-    text-align: center;
     margin: 3px;
 }
 .red_checkers{
@@ -39,6 +38,5 @@
     width: 55px;
     height: 55px;
     border-radius: 50px;
-    text-align: center;
     margin: 3px;
 }
