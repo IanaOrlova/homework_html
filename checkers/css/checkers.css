@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.board{
+    color: beige;
+    width: 530px;
+    height: 530px;
+}
+.game{
+    height: 486px;
+    width: 486px;
+    margin: 20px;
+    border: 3px solid black;
+}
+.cell{
+    float: left;
+    width: 60px;
+    height: 60px;
+}
+.line1 .cell:nth-child(odd){
+    background-color: black;
+}
+
+.line2 .cell:nth-child(even){
+    background-color: black;
+}
+.black_checkers{
+    background-color: #515A5A;
+    width: 55px;
+    height: 55px;
+    border-radius: 50px;
+    text-align: center;
+    margin: 3px;
+}
+.red_checkers{
+    background-color: red;
+    width: 55px;
+    height: 55px;
+    border-radius: 50px;
+    text-align: center;
+    margin: 3px;
+}
