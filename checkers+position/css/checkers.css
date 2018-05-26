@@ -1,0 +1,84 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.board{
+    color: beige;
+    width: 530px;
+    height: 530px;
+}
+.game{
+    height: 486px;
+    width: 486px;
+    margin: 20px;
+    border: 3px solid black;
+}
+.cell{
+    float: left;
+    width: 60px;
+    height: 60px;
+}
+.line1 .cell:nth-child(odd){
+    background-color: black;
+}
+
+.line2 .cell:nth-child(even){
+    background-color: black;
+}
+
+.black_checkers{
+    background-color: #515A5A;
+    width: 53px;
+    height: 53px;
+    border-radius: 50px;
+    margin: 31px;
+    display: inline-block;
+
+}
+.red_checkers{
+    background-color: red;
+    width: 53px;
+    height: 53px;
+    border-radius: 50px;
+    margin: 31px;
+    display: inline-block;
+}
+.dot1{
+    position:absolute;
+    left: -3px;
+   top: -8px;
+    margin: 2px;
+}
+.dot2{
+    position:absolute;
+    left: 56px;
+    top: 54px;
+    margin: 2px;
+}
+.dot3{
+    position:absolute;
+    left: -3px;
+    top: 114px;
+    margin: 2px;
+}
+.dot4{
+    position:absolute;
+    left: 56px;
+    top: 294px;
+    margin: 2px;
+}
+.dot5{
+    position:absolute;
+    left: -3px;
+    top: 354px;
+    margin: 2px;
+}
+.dot6 {
+    position: absolute;
+    left: 56px;
+    top: 414px;
+    padding-left: 2px;
+    padding-right: 2px;
+}
+
