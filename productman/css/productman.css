@@ -79,11 +79,15 @@ aside p{
     letter-spacing: 0.6px;
     margin: 5% 0 0 2%;
 }
-
+a{
+    text-decoration: none;
+    color: #e10011;
+}
 aside p:nth-child(3){
     color: #e10011;
     font-size: 24px;
     font-weight: 700;
+    text-decoration: none;
 }
 
 aside p:nth-child(4){
@@ -103,7 +107,8 @@ aside p:nth-child(4){
 /*-----------------------------------------середина-------------------------------*/
 .middle{
     background-color: white;
-    margin: 8% 0;
+    margin: 8% auto;
+    width: 1198px;
 }
 
 h3{
@@ -133,68 +138,60 @@ h3{
     display: inline-block;
 }
 
-.middle ul li:first-child{
-    width: 692px;
-    margin: 4% 0 0 7%;
-    background-color: #eeeeee;
-    border-radius: 7px;
-    text-align: center;
+.imege{
+    margin: 50px;
+    display: flex;
+    flex-wrap: wrap;
 }
 
-.middle ul li:nth-child(2){
+.speaker,
+.beats{
+    margin: 20px;
     background-color: #eeeeee;
     border-radius: 7px;
-    margin: 0 7% 0 3%;
+}
+
+.speaker{
+    width: 692px;
+    height: 391px;
+}
+.beats{
     height: 391px;
     width: 325px;
-    position: relative;
-    bottom: 26px;
     text-align: right;
 }
-
-.middle ul li:nth-child(3){
-    margin: 0 0 6% 97px;
+.second_line{
+    margin: 20px 21px 70px 20px;
 }
-
-.red{
-    position: relative;
-    bottom: 464px;
-    left: 90px;
-    display: inline-block;
-}
-
-.red_text{
-    position: relative;
-    bottom: 590px;
-    left: 90px;
-    text-align: left;
-    color: white;
-    font-family: "Roboto";
-    font-size: 30px;
-    font-weight: 900;
-    margin: 0 0 0 9%;
-}
-
-.middle ul li:nth-child(4){
-    margin: 15px 0 0 38px;
-
-}
-
-.middle ul li:nth-child(5){
-    margin: 0 0 0 38px;
-}
-
-div .red_box:hover{opacity: 0;}
+/*----------------------hover--------------------------*/
+.red_box_text{position: relative;}
 
 .red_box{
-   height: 0;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    bottom: 0;
+    right: 0;
+    height: 391px;
     width: 325px;
+    background: #e10011;
+    border-radius: 7px;
+    display: none;
 }
-.red_box:after{
-    content: "";
-    clear: both;
-    display: table;
+.red_box p{
+    position:absolute;
+    bottom:58px;
+    left:42px;
+    font-weight: 900;
+    font-size:28px;
+    text-align: left;
+    color: white;
 }
+
+.red:hover .red_box {
+    display: block;
+}
+
 /*--------------------------------нижняя часть---------------------*/
 footer{
     margin:  5% 0 1% 0 ;
