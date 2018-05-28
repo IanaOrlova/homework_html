@@ -1,0 +1,167 @@
+@font-face {
+    font-family: 'museo_sans_rounded100';
+    src: url('../fonts/museosansrounded-100-webfont.woff2') format('woff2'),
+    url('../fonts/museosansrounded-100-webfont.woff') format('woff')
+}
+
+p{
+    font-family: museo_sans_rounded100,sans-serif;
+}
+
+html, body {height: 100%;}
+* {
+    margin: 0 0;
+    padding: 0 0;
+    box-sizing: border-box;
+}
+/*-------------------------------фон---------------------*/
+.background{
+    background-color: #c5c5c8;
+    height:600px;
+    width: 800px;
+}
+
+.background__elem1{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
+.background__elem2{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
+
+/*------------------------------фон2------------------------*/
+section{
+    background-color: #111a28;
+    border-radius: 10px;
+    box-shadow: 0 0 65px rgba(0,0,0,0.82);
+    position: absolute;
+    top: 110px;
+    bottom: 110px;
+    left: 50px;
+    height: 393px;
+    width: 686px;
+}
+.background2{
+    display: flex;
+    flex-wrap: wrap;
+}
+/*-----------------------------левая сторона-----------------*/
+.section--left{
+    width: 60%;
+}
+.section--left div{
+    margin-top: 20px;
+    margin-left: 20px;
+}
+.section--left div:nth-child(2){
+    margin-left: 34px;
+    margin-top: 67px;
+}
+
+.section--left p{
+    display: inline-block;
+    margin-top: 61px;
+    margin-left: 174px;
+}
+.section--left span{
+    width: 13px;
+    background: #1f273f;
+    border-radius: 50%;
+    height:13px;
+    display:inline-block;
+    margin-right: 2px;
+    margin-left: 2px;
+    border: 1px solid white
+}
+
+.section--left span:nth-child(2){
+    background-color: #ffffff;
+    border: none;
+    width: 12px;
+    height: 12px;
+}
+
+.section--left span:nth-child(3){
+    background-color: #ed3333;
+    border: none;
+    width: 12px;
+    height: 12px;
+}
+
+.section--left span:nth-child(4){
+    background-color: #29e3ea;
+    border:none;
+    width: 12px;
+    height: 12px;
+}
+/*------------------------------правая сторона------------------------------*/
+.section--right{width: 40%;}
+
+.section--right p{
+    font-size: 24px;
+    line-height: 26px;
+    color: rgb(225,225,225);
+    padding-top: 64px;
+    padding-left: 60px;
+}
+
+.section--right p:nth-child(2){
+    font-weight: 200;
+    font-size: 14px;
+    line-height: 26px;
+    color: rgba(225, 225, 225, 0.5);
+    padding-top: 5px;
+}
+.section--right p:nth-child(3){
+    padding-top: 16px;
+}
+/*----------------рейтинг----------------*/
+.section--right span{
+    color: yellow;
+    font-size: 15px;
+}
+.section--right span:nth-child(2){
+    color: white;
+    font-size: 15px;
+}
+/*-----------------форма----------------*/
+form{
+    padding-top: 20px;
+    padding-left: 60px;
+    margin-left: 3px;
+}
+
+select,
+option{
+    font-family: museo_sans_rounded100,sans-serif;
+    background-color: #111a28;
+    color: rgba(225, 225, 225, 0.5);
+    outline: none;
+    padding: 6px;
+}
+
+input {
+    font-family: museo_sans_rounded100,sans-serif;
+    font-size: 14px;
+    line-height: 18px;
+    color: rgba(225, 225, 225, 0.5);
+    background: #202835;
+    padding: 12px 55px;
+    position: relative;
+    top: 31px;
+    outline: none;
+    border: 1px solid  rgba(225, 225, 225, 0.5);
+}
+
+input:active{
+    background-color: rgba(225, 225, 225, 0.5);;
+    color: #111a28
+}
+
