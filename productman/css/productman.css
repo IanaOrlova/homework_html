@@ -108,7 +108,8 @@ aside p:nth-child(4){
 .middle{
     background-color: white;
     margin: 8% auto;
-    width: 1198px;
+    width: 100%;
+    max-width: 1198px;
 }
 
 h3{
