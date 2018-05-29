@@ -4,7 +4,7 @@
     url('../fonts/museosansrounded-100-webfont.woff') format('woff')
 }
 
-p{
+*{
     font-family: museo_sans_rounded100,sans-serif;
 }
 
@@ -140,7 +140,6 @@ form{
 
 select,
 option{
-    font-family: museo_sans_rounded100,sans-serif;
     background-color: #111a28;
     color: rgba(225, 225, 225, 0.5);
     outline: none;
@@ -148,7 +147,6 @@ option{
 }
 
 input {
-    font-family: museo_sans_rounded100,sans-serif;
     font-size: 14px;
     line-height: 18px;
     color: rgba(225, 225, 225, 0.5);
