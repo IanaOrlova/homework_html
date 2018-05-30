@@ -1,0 +1,126 @@
+*{
+    font-family: Arial ;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body, html {
+    height: 100%;
+}
+
+h5,
+p,
+a{
+    font-weight: 400;
+    line-height: 20px;
+    text-align: left;
+}
+/*--------------------фон------------------*/
+body{
+    background: linear-gradient(to bottom left, #dd2476 ,#ff512f );
+
+
+/*----------------------check in-------------------*/
+}
+.check{
+    background-color: white;
+    max-width: 471px;
+    border-radius: 4px;
+    margin: auto;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 12%;
+}
+
+img{
+    margin-right: 10px;
+    margin-left: 31px;
+}
+
+h5{
+    color:  #1b1c1d;
+    font-size: 24px;
+    padding-top: 33px;
+    font-weight: 700;
+}
+
+p{
+    color:  #797b7f;
+    font-size: 13px;
+    padding-left: 33px;
+    padding-right: 35px;
+    padding-top: 17px;
+}
+
+a{
+    color:  #ea355a;
+    font-size: 13px;
+    text-decoration: none;
+}
+/*-------------------------------form---------------------*/
+form{
+    padding-left: 33px;
+    padding-right: 33px;
+    margin-top: 34px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+input{
+    background-color: #f0f0f0;
+    border: none;
+    padding: 14px 0 14px 13px;
+    margin-top: 6px;
+    margin-bottom: 6px;
+    border-radius: 4px;
+    outline: none;
+}
+
+input:focus{
+    border: 1px solid #bd1962;
+}
+
+.form__input--left{
+    margin-right: 6px;
+    width: 48.3%;
+}
+
+.form__input--right{
+    width: 48.3%;
+    margin-left: 7px;
+}
+
+.form__input--email{
+    width: 100%;
+}
+
+.form__input--password{
+    width: 100%;
+}
+
+.btn{
+    width: 100%;
+    background-color: #ea355a;
+    font-size: 18px;
+    line-height: 20px;
+    color: rgb(255,255,255);
+    font-weight: bold;
+    border-bottom: 4px solid #bd1962;
+    outline: none;
+}
+
+.btn:active{
+    background-color: #bd1962;
+}
+
+.form__text--bottom a{
+     font-size: 12px;
+ }
+
+.form__text--bottom {
+    margin-bottom: 62px;
+    padding-left: 33px;
+    padding-right: 47px;
+    font-size: 12px;
+}
