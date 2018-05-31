@@ -3,6 +3,11 @@
     padding: 0;
     box-sizing: border-box;
 }
+[class^=line]:after{
+    content: "";
+    clear: both;
+    display: table;
+}
 .game{
     background-color: blanchedalmond;
     height: 486px;
