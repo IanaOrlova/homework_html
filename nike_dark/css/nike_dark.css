@@ -45,8 +45,8 @@ section{
     top: 110px;
     bottom: 110px;
     left: 50px;
-    height: 393px;
-    width: 686px;
+    max-height: 393px;
+    max-width: 686px;
 }
 .background2{
     display: flex;
@@ -59,16 +59,18 @@ section{
 .background2__section--left div{
     margin-top: 20px;
     margin-left: 20px;
+    margin-bottom: 67px;
 }
 .background2__section--left div:nth-child(2){
     margin-left: 34px;
-    margin-top: 67px;
+    margin-bottom:61px;
 }
 
 .background2__section--left p{
-    display: inline-block;
-    margin-top: 61px;
-    margin-left: 174px;
+    max-width: 80px;
+    text-align: center;
+    margin-right:  auto;
+    margin-left: auto;
 }
 .background2__section--left span{
     width: 13px;
@@ -110,6 +112,7 @@ section{
     color: rgb(225,225,225);
     padding-top: 64px;
     padding-left: 60px;
+    padding-right: 60px;
 }
 
 .background2__section--right p:nth-child(2){
@@ -118,6 +121,7 @@ section{
     line-height: 26px;
     color: rgba(225, 225, 225, 0.5);
     padding-top: 5px;
+    padding-right: 20px;
 }
 .background2__section--right p:nth-child(3){
     padding-top: 16px;
@@ -134,8 +138,8 @@ section{
 /*-----------------форма----------------*/
 form{
     padding-top: 20px;
-    padding-left: 60px;
-    margin-left: 3px;
+    padding-left: 63px;
+    padding-right: 63px;
 }
 
 select,
