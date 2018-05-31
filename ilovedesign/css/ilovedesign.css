@@ -5,7 +5,7 @@ html, body {height: 100%;}
     padding: 0 0;
 }
 body{
-   width: 1920px;
+   max-width: 1920px;
    height: 1852px;
 }
 /*----------------------------------верхний блок---------------*/
@@ -17,23 +17,23 @@ header{
     width: 134px;
     height: 134px;
     position: relative;
-    left: 205px;
+    left: 235px;
     display: inline-block;
 }
 
 .logo{
     display: inline-block;
-    padding: 4% 35% 0;
+    padding-top: 4% ;
+    padding-left:470px;
+
     background-size: cover;
 }
 h2{
     color:  #ffffff;
     font-size: 80px;
     font-weight: 700;
-    line-height: 30px;
     text-align: center;
     padding: 178px 0 40px 0;
-    white-space: pre;
 }
 .im_glad{
     color:  #ffffff;
@@ -41,16 +41,13 @@ h2{
     font-weight: 400;
     line-height: 30px;
     text-align: center;
-    padding: 40px 9% 0;
-
+    padding: 40px 13% 178px 13%;
 }
 .button{
-    width: 45px;
-    height: 45px;
-    position: relative;
-    left: 125px ;
-    padding: 30% 0 10% 0 ;
 
+    position: relative;
+    left: 145px ;
+    padding-bottom: 22px;
 }
 
 .button:active{
@@ -66,9 +63,7 @@ h2{
     height: 100%;
     background-position: bottom;
 }
-main{
-    height: 57.2%;
-}
+
 /*-----------------------для фонового рисунка задаем высоту 100% а для блока, который он покрывает, отдельную высоту,
  тогда рисунок смещается до нужных нам размеров---------------*/
 
@@ -86,11 +81,18 @@ h3{
     color:  #464b4f;
     font-size: 80px;
     font-weight: 700;
-    line-height: 36px;
     text-align: center;
     padding: 3% 0 0 0;
 }
 /*------------------------колонки------------*/
+li{
+    list-style-type: none;
+}
+.colomn{
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 120px;
+}
 .template,
 .brand,
 .dreams{
@@ -100,6 +102,7 @@ h3{
     line-height: 30px;
     text-align: left;
     width: 300px;
+    padding: 0 10px 0  10px;
 }
 
 .template1,
@@ -109,20 +112,11 @@ h3{
     font-weight: 700;
     line-height: 42px;
     text-align: left;
-    padding: 82px 0 0  490px;
-
+    padding: 90px 10px 0  10px;
 }
 
-.brand1{padding:82px 0 0  229px;}
-
-.dreams1{padding:82px 0 0  255px;}
-
-li{display: inline-block;margin:0;float:left}
-
-.template{padding: 22px 0 10px 490px;}
-
-.brand{padding: 22px 0 10px 25px;}
-
-.dreams{padding: 22px 0 10px 19px;}
-
+.template1,
+.template{
+    padding-left: 285px;
+}
 
