@@ -13,20 +13,10 @@ header{
     background-color:  #23232e;
 }
 
-.imeg {
-    width: 134px;
-    height: 134px;
-    position: relative;
-    left: 235px;
-    display: inline-block;
-}
-
 .logo{
-    display: inline-block;
     padding-top: 4% ;
-    padding-left:470px;
-
-    background-size: cover;
+    text-align: center;
+    margin: 0 auto;
 }
 h2{
     color:  #ffffff;
@@ -41,19 +31,15 @@ h2{
     font-weight: 400;
     line-height: 30px;
     text-align: center;
-    padding: 40px 13% 178px 13%;
+    max-width: 390px;
+    margin: 0 auto;
+    padding-bottom: 183px;
 }
+
 .button{
-
-    position: relative;
-    left: 145px ;
-    padding-bottom: 22px;
+    padding-bottom: 20px;
 }
 
-.button:active{
-    width: 50px;
-    height: 50px;
-}
 
 /*--------------------------нижний блок-------------*/
 /*-----------------фоновый рисунок----------------*/
@@ -66,23 +52,30 @@ h2{
 
 /*-----------------------для фонового рисунка задаем высоту 100% а для блока, который он покрывает, отдельную высоту,
  тогда рисунок смещается до нужных нам размеров---------------*/
-
 .name{
     color:  #464b4f;
     font-size: 30px;
     font-weight: 400;
     line-height: 42px;
     text-align: center;
-    white-space: pre;
-    padding: 2% 15% 0 8% ;
-    text-indent: 5em;
+    padding-top: 121px;
+    margin: 0 auto;
+    max-width: 870px;
 }
+
+.name p:last-child{
+    padding-top: 58px;
+}
+
 h3{
     color:  #464b4f;
     font-size: 80px;
     font-weight: 700;
     text-align: center;
-    padding: 3% 0 0 0;
+    padding-top: 117px;
+}
+/*#what_i_do{
+    text-indent: 1.5em;
 }
 /*------------------------колонки------------*/
 li{
