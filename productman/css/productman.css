@@ -31,7 +31,7 @@ header{
 }
 h5{
     padding: 1% 0 8% 0 ;
-    font-family: 'Roboto';
+    font-family: Roboto, sans-serif ;
     color: #303030;
     font-size: 48px;
     font-weight: 900;
@@ -45,7 +45,7 @@ header ul{
 header ul li a{
     text-decoration: none;
     color: #303030;
-    font-family: 'Roboto';
+    font-family: Roboto, sans-serif;
     font-size: 18px;
     font-weight: 400;
     letter-spacing: 0.45px;
@@ -54,14 +54,19 @@ header ul li a{
 header ul li{
     margin: 0 25px;
 }
+li:last-child{
+    margin-right: 0;
+}
 /*---------------------------------------------слайд-------------------------*/
-aside {
+.informacion {
     width: 50%;
     text-align: right;
+    display: inline-block;
 }
+
 h2{
     color: #303030;
-    font-family: "Raleway";
+    font-family: Raleway,sans-serif;
     font-size: 150px;
     font-weight: 900;
     line-height: 150px;
@@ -70,39 +75,58 @@ h2{
     display: inline-block;
 }
 
-aside p{
+main p{
     color: #303030;
-    font-family: Roboto;
+    font-family: Roboto,sans-serif;
     font-size: 24px;
     font-weight: 300;
     line-height: 36px;
     letter-spacing: 0.6px;
     margin: 5% 0 0 2%;
 }
+.slide{ max-width: 750px}
+
 a{
     text-decoration: none;
     color: #e10011;
 }
-aside p:nth-child(3){
+main p:nth-child(3){
     color: #e10011;
     font-size: 24px;
     font-weight: 700;
     text-decoration: none;
 }
+.dot{
+   text-align: center;
+    max-width: 80px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 87px;
 
-aside p:nth-child(4){
-    font-weight: 700;
-    font-size: 40px;
-    padding: 7% 0 0 0;
 }
+
 .handsfree{
-    margin: 0 7%;
-   display: inline-block;
-    position: relative;
-    bottom: 110px;
+    max-height: 500px;
+    margin-left: 100px;
+    margin-right: 15px;
+    display: inline-block;
+    width: 40%;
+
 }
 
-.dot{color:#e10011;}
+.dot span{
+    width: 13px;
+    background: black;
+    border-radius: 50%;
+    height:13px;
+    display:inline-block;
+    margin-right: 4px;
+    margin-left: 4px;
+}
+
+.dot span:first-child{
+    background-color: #e10011;
+}
 
 /*-----------------------------------------середина-------------------------------*/
 .middle{
@@ -110,33 +134,29 @@ aside p:nth-child(4){
     margin: 8% auto;
     width: 100%;
     max-width: 1198px;
+    text-align: center;
 }
 
-h3{
+.middle h3{
     color: #303030;
-    font-family: "Raleway";
+    font-family: Raleway,sans-serif;
     font-size: 48px;
-    font-weight: 900;
     line-height: 80px;
     letter-spacing: 1.2px;
     padding-top: 6%;
     text-align: center;
 }
-.underline{
-     text-align: center;
-     padding: 0 40% 0 ;
- }
 
 .underline1{
     color: #303030;
-    font-family: Raleway;
+    font-family: Raleway,sans-serif;
     font-size: 18px;
     font-weight: 400;
     line-height: 24px;
     letter-spacing: 0.45px;
-    text-align: center;
-    padding: 10px 26% 0 26%;
+    padding-top: 10px;
     display: inline-block;
+    max-width: 570px;
 }
 
 .imege{
@@ -162,53 +182,68 @@ h3{
     text-align: right;
 }
 .second_line{
-    margin: 20px 21px 70px 20px;
+   margin: 20px 21px 70px 20px;
 }
 /*----------------------hover--------------------------*/
-.red_box_text{position: relative;}
+
+.red{position: relative;}
 
 .red_box{
     position: absolute;
-    top: 20px;
-    left: 20px;
+    top: 0;
+    left: 0;
     bottom: 0;
     right: 0;
-    height: 391px;
-    width: 325px;
     background: #e10011;
-    border-radius: 7px;
+    border-radius:7px;
     display: none;
+
 }
-.red_box p{
+.red_text{
     position:absolute;
     bottom:58px;
     left:42px;
+    line-height: 1.2;
     font-weight: 900;
     font-size:28px;
     text-align: left;
     color: white;
 }
-
+.red_text:after{
+    content:"";
+    background:white;
+    width:86px;
+    height:4px;
+    position:absolute;
+    left:0;
+    top:76px;
+}
 .red:hover .red_box {
     display: block;
 }
 
 /*--------------------------------нижняя часть---------------------*/
 footer{
-    margin:  5% 0 1% 0 ;
+    margin-bottom: 1% ;
     text-align: center;
 }
 
-footer h3{
-    padding: 0 28% 0 ;
+.central_part h3{
+    color: #303030;
+    font-family: Raleway,sans-serif;
+    font-size: 48px;
+    line-height: 80px;
+    letter-spacing: 1.2px;
     text-align: center;
-    display: inline-block;
 }
-form{padding: 3% 0 7% 0;}
+form{
+    margin: 3% auto 7%;
+    text-align: center;}
+
 
 .search{
     color: #979797;
-    font-family: "Raleway";
+    font-family: Raleway,sans-serif;
     font-size: 18px;
     font-weight: 400;
     line-height: 24px;
@@ -223,7 +258,7 @@ form{padding: 3% 0 7% 0;}
 .button{
     background-color: #e10011;
     color: #ffffff;
-    font-family: "Roboto";
+    font-family: Roboto, sans-serif;
     font-size: 18px;
     font-weight: 900;
     padding: 17px 45px;
@@ -232,21 +267,23 @@ form{padding: 3% 0 7% 0;}
     margin: 0 0 0 -3px;
 }
 
-.social{padding: 7% 0 15% 0;}
+.social{margin-bottom: 64px;}
 
-footer p {
+section p {
     color: #303030;
-    font-family: "Raleway";
+    font-family: Raleway,sans-serif;
     font-size: 18px;
     font-weight: 400;
     line-height: 24px;
     letter-spacing: 0.45px;
-    padding: 0 27%;
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto;
 }
 
 span{
     color: #979797;
-    font-family: Raleway;
+    font-family: Raleway,sans-serif;
 }
 
 
