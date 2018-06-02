@@ -110,19 +110,21 @@ input{
     margin-bottom: 26px;
 }
 
-.blocks{
-    margin-top:7px ;
-    margin-bottom: 26px;
+select{
+    display:block;
 }
 
 .month{
     padding: 12px 86px 13px 6px;
     margin-right: 8px;
+    margin-top: 7px;
+    margin-bottom: 26px;
 }
 
 .year{
     padding: 12px 33px 13px 6px;
     margin-left: 7px;
+    margin-top: 21px;
 }
 
 .password{
