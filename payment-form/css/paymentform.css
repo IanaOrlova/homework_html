@@ -7,6 +7,10 @@
 body, html {
     height: 100%;
 }
+p, label, input, a{
+    font-weight: 400;
+}
+
 
 .background{
     background: linear-gradient(to top left,#1a1e21,#565b5c);
@@ -25,7 +29,6 @@ body, html {
 section{
     background-color: #eee4a9;
     display: flex;
-    flex-wrap: wrap;
     margin-bottom: 44px;
 }
 
@@ -47,7 +50,6 @@ section{
 .name p:last-child{
     color:  #a6a28d;
     font-size: 10px;
-    font-weight: 400;
     text-align: left;
 }
 
@@ -74,14 +76,12 @@ form{
 label{
     color:  #9eabad;
     font-size: 13px;
-    font-weight: 400;
     text-align: left;
 }
 
 form p{
     color:  #9eabad;
     font-size: 12px;
-    font-weight: 400;
     padding-top: 35px;
     padding-left: 8px;
 }
@@ -99,7 +99,6 @@ input{
     width: 100%;
     color:  #727f82;
     font-size: 13px;
-    font-weight: 400;
     text-align: left;
 }
 
@@ -149,13 +148,22 @@ input{
     padding-bottom: 11px;
     padding-top: 11px;
     outline: none;
+    border: none;
 }
 
 a{
     color:  #9eabad;
     font-size: 12px;
-    font-weight: 400;
     text-align: left;
+}
+
+.line:before{
+    content:"";
+    background:#e4e7e8;
+    width:288px;
+    height:1px;
+    position:absolute;
+    margin: 0 auto;
 }
 
 
