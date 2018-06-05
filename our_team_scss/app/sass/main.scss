@@ -1,0 +1,141 @@
+$font-family: 'Raleway', sans-serif;
+$font-family_h:'Roboto', sans-serif;
+$color:#ffcc00;
+$text-color:#666666;
+
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: $font-family;
+  text-align: center;
+
+}
+body, html {
+  height: 100%;
+}
+
+
+header h2{
+    font-family: $font-family_h;
+    color: $color;
+    font-size: 60px;
+    font-weight: 900;
+    padding-bottom: 35px;
+}
+
+header p{
+  padding-top: 108px;
+  font-size: 18px;
+  letter-spacing: 0;
+  line-height: 24px;
+  color: $text-color;
+}
+
+header div{
+  padding-bottom: 40px;
+}
+
+main{
+  margin: 0 auto;
+  max-width: 1140px;
+  display: flex;
+}
+
+.left {
+  width: 50%;
+  display: inline-block;
+  margin: 0 auto;
+  border-right: 1px solid $color;
+  padding: 90px 0 60px;
+  position: relative;
+}
+
+.right{
+  width: 50%;
+  position: relative;
+  color: $text-color;
+    h3{
+      padding-top: 90px;
+      font-family: $font-family_h;
+      padding-bottom: 29px;
+      font-size: 36px;
+      &:after{
+        content:"";
+        background:$color;
+        width:100px;
+        height:1px;
+        position:absolute;
+        left:230px;
+        top:160px;
+      }
+  }
+}
+
+.right p {
+  display: inline-block;
+  padding-bottom: 33px;
+  padding-top: 31px;
+  width: 430px;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 24px;
+  &.text{
+    font-size: 24px;
+    font-weight: 400;
+  }
+}
+
+.yellow_boxes{
+  color: $color;
+  font-weight: 800;
+  height: 25px;
+}
+
+input{
+  margin-top: 24px;
+  background: none;
+  border: 1px solid $color;
+  padding: 5px 10px;
+  outline: none;
+  font-family: OpenSans sans-serif;
+  color:  $text-color;
+  font-size: 14px;
+  font-weight: 700;
+  &:active{
+    background: $color;
+  }
+}
+
+.div__elem--right,
+.div__elem--left{
+  width: 14px;
+  height: 23px;
+  position: absolute;
+  bottom: 0;
+  top: 287px;
+}
+
+.div__elem--right{
+  right: 0;
+}
+
+ span{
+  width: 9px;
+  background: $color;
+  border-radius: 50%;
+  height:9px;
+  display: inline-block;
+   margin: 101px 4px 93px 4px;
+   &:nth-child(2){
+     background: none;
+     border: 1px solid $color;
+   }
+}
+
+
+
+
+
+
