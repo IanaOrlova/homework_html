@@ -79,19 +79,15 @@ label{
     text-align: left;
 }
 
+
 form p{
+
     color:  #9eabad;
     font-size: 12px;
-    padding-top: 35px;
-    padding-left: 8px;
-}
-
-form p:last-child{
     padding-top: 20px;
     padding-bottom: 20px;
     text-decoration: underline;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto;
 }
 
 input{
@@ -110,21 +106,31 @@ input{
     margin-bottom: 26px;
 }
 
-select{
-    display:block;
+.blocks{
+    display:flex;
+    width: 100%;
 }
 
 .month{
     padding: 12px 86px 13px 6px;
-    margin-right: 8px;
     margin-top: 7px;
     margin-bottom: 26px;
 }
 
 .year{
     padding: 12px 33px 13px 6px;
-    margin-left: 7px;
     margin-top: 21px;
+}
+.cvv{
+    display: flex;
+    width: 100%;
+}
+
+.cvv-text{
+    text-align: center;
+    font-size: 12px;
+    padding-top: 30px;
+
 }
 
 .password{
