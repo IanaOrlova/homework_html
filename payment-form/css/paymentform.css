@@ -109,17 +109,58 @@ input{
 .blocks{
     display:flex;
     width: 100%;
+    position: relative;
+}
+ select{
+    background: transparent;
+    -webkit-appearance: none;
+    line-height: 1em;
+    -moz-appearance: none;
+    text-indent: 0.01px;
+    text-overflow: '';
+    -ms-appearance: none;
+    appearance: none!important;
+}
+select::-ms-expand {
+    display: none;
+}
+.select{
+    width: 13px;
+    height: 13px;
+    position: absolute;
+    left: 140px;
+    right: 0;
+    bottom: 0;
+    top: 35px;
+}
+.select1{
+    width: 13px;
+    height: 13px;
+    position: absolute;
+    left: 260px;
+    /*right: 0;*/
+    bottom: 0;
+    top: 35px;
+}
+
+[class*=select] img{
+    width: 13px;
+    height: 13px;
 }
 
 .month{
     padding: 12px 86px 13px 6px;
     margin-top: 7px;
     margin-bottom: 26px;
+    height: 43px;
+    width: 173px;
 }
 
 .year{
     padding: 12px 33px 13px 6px;
     margin-top: 21px;
+    height: 43px;
+    width: 94px;
 }
 .cvv{
     display: flex;
@@ -130,7 +171,6 @@ input{
     text-align: center;
     font-size: 12px;
     padding-top: 30px;
-
 }
 
 .password{
