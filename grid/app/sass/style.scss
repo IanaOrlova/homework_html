@@ -13,6 +13,20 @@ img{
   margin: 20px auto;
 }
 
+.grid-container2{
+  max-width: 50%;
+  float: right;
+  .ba-grid{
+    margin-top: 0;
+  }
+}
+
+.grid-container2:after{
+  content: '';
+  display: table;
+  clear: both;
+}
+
 .ba-grid > [class*="ba-width-"]{
   float: left;
   padding-right: 10px;
@@ -52,16 +66,17 @@ p{
 }
 
 .ba-width-2-3{
-  width: 25%;
+  width: 50%;
   margin-top: 15px;
 }
 
+.ba-width-2-2,
 .ba-width-3-1,
 .ba-width-4-3{
   width: 33.33%;
 }
 
-.ba-width-2-2,
+
 .ba-width-3-2,
 .ba-width-4-1{
   width: 16.66%;
