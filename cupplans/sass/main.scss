@@ -1,0 +1,102 @@
+@import "normalize";
+
+@font-face {
+  font-family: 'misoregular';
+  src: url('../fonts/miso-webfont.woff2') format('woff2'),
+  url('../fonts/miso-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'misobold';
+  src: url('../fonts/miso-bold-webfont.woff2') format('woff2'),
+  url('../fonts/miso-bold-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+*{
+  margin: 0 auto;
+}
+
+.hold{
+  display: flex;
+  max-width: 1200px;
+  background: #fdde7e;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.bronze,
+.gold,
+.silver{
+  background: white;
+  text-align: center;
+  margin: 0;
+}
+
+h3{
+  font-family: misobold;
+  color:  #02995b;
+  font-size: 70px;
+  font-weight: 700;
+  padding-top: 39px;
+  padding-bottom: 17px;
+}
+
+h2{
+  font-family: misoregular;
+  color:  #333333;
+  font-size: 56px;
+  font-weight: 400;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+p{
+  max-width: 150px;
+  font-family: Lato, sans-serif;
+  color:  #333333;
+  font-size: 20px;
+  font-weight: 300;
+  padding-bottom: 30px;
+}
+
+.cup{
+  margin-left: 120px;
+  margin-right: 105px;
+}
+
+.bronze_cup,
+.gold_cup,
+.silver_cup{
+  position: relative;
+}
+
+.bronze_bean,
+.silver_bean,
+.gold_bean{
+  position: absolute;
+  left: 162px;
+  top: 65px;
+}
+
+.gold h3{
+  padding-bottom: 41px;
+  padding-top: 48px;
+}
+
+.gold h2{
+padding-top: 46px;
+}
+
+.gold p{
+  padding-bottom: 52px;
+}
+
+.gold{
+   margin-top: 46px;
+   margin-bottom: 46px;
+}
+
