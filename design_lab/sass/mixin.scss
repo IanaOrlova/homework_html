@@ -1,3 +1,6 @@
+@import "variables";
+
+
 @mixin h3{
   font-size: 34px;
   font-weight: 700;
@@ -12,4 +15,15 @@
   font-size: 16px;
   font-weight: 300;
   line-height: 26px;
+}
+@mixin content{
+  position: relative;
+  max-width: 902px;
+  color:  $color_1;
+}
+
+@mixin content_2{
+  position: relative;
+  max-width: 902px;
+  color:  $color_2;
 }
