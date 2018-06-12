@@ -1,0 +1,15 @@
+@mixin h3{
+  font-size: 34px;
+  font-weight: 700;
+  letter-spacing: 5px;
+  position: absolute;
+  right: 0;
+  left: 0;
+  max-width: 412px;
+}
+
+@mixin p{
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 26px;
+}
