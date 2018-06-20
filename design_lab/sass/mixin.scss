@@ -14,7 +14,7 @@
 @mixin p{
   font-size: 16px;
   font-weight: 300;
-  line-height: 26px;
+  line-height: 25px;
 }
 @mixin content{
   position: relative;
@@ -24,6 +24,6 @@
 
 @mixin content_2{
   position: relative;
-  max-width: 902px;
+  max-width: 899px;
   color:  $color_2;
 }

@@ -26,24 +26,25 @@ h2, h3, h4{text-transform: uppercase;}
   border-right: 2px solid $color_1;
 }
 
-h3:after{
-  content:"";
-  background: $color_1;
-  width:235px;
-  height:2px;
-  position:absolute;
-  left:420px;
-  top:22px;
-}
-
-h3:before{
-  content:"";
-  background:$color_1;
-  width:235px;
-  height:2px;
-  position:absolute;
-  right:420px;
-  top:22px;
+h3{
+    &:after{
+      content:"";
+      background: $color_1;
+      width:235px;
+      height:2px;
+      position:absolute;
+      left:420px;
+      top:22px;
+    }
+    &:before{
+      content:"";
+      background:$color_1;
+      width:235px;
+      height:2px;
+      position:absolute;
+      right:420px;
+      top:22px;
+    }
 }
 
 /*------------------------------------------------------1----------------------------------*/
@@ -53,7 +54,7 @@ h3:before{
   background: url("../img/hero-bg.jpg") no-repeat;
   background-size: cover;
   padding-top: 283px;
-  padding-bottom: 385px;
+  padding-bottom: 388px;
   .content {
     color: $color_2;
     h2 {
@@ -70,32 +71,30 @@ h3:before{
       line-height: 29px;
       &:last-child {
         max-width: 472px;
-
       }
     }
+    .logo{
+      padding-bottom: 83px;
+    }
   }
+    .scroll{
+      position: absolute;
+      left: 50%;
+      bottom:112px;
+      transform: translateX(-50%);
+      display: inline-block;
+    }
 }
 
-.logo{
-  padding-bottom: 87px;
-}
-
-.scroll{
-  position: absolute;
-  left: 50%;
-  bottom:110px;
-  transform: translateX(-50%);
-  display: inline-block;
-}
 /*-------------------------------------------------------------------2--------------------------*/
 .about_us{
   .content{
     @include content;
     padding-top: 162px;
-    padding-bottom: 156px;
+    padding-bottom: 163px;
     h3{
       @include h3;
-      top: 140px;
+      top: 138px;
     }
     p{
       @include p;
@@ -104,7 +103,7 @@ h3:before{
       max-width: 533px;
         &:last-child{
           padding-top: 0;
-          padding-bottom: 15px;
+          padding-bottom: 20px;
           max-width: 435px;
         }
      }
@@ -119,7 +118,7 @@ h3:before{
       padding-bottom: 107px;
       h3{
         @include h3;
-        top: 106px;
+        top: 104px;
         &:before{
           background: $color_2;
           }
@@ -144,7 +143,7 @@ h3:before{
 .what_we_do{
   .content{
     @include content;
-    padding-bottom: 117px;
+    padding-bottom: 115px;
     padding-top: 121px;
       h3{
         @include h3;
@@ -154,34 +153,31 @@ h3:before{
         letter-spacing: 3px;
         font-size: 20px;
         font-weight: 700;
-        padding-top: 32px;
+        padding-top: 33px;
       }
       p{
         @include p;
         max-width: 627px;
         }
-  }
-}
-
-.design{
-  padding-top: 125px;
-  p{
-    padding-top: 30px;
-  }
-}
-
-.development{
-  padding-top: 99px;
-  p{
-    padding-top: 24px;
-  }
-}
-
-.product{
-  padding-top: 92px;
-  p{
-    padding-top: 46px;
-    padding-bottom: 80px;
+        .design{
+          padding-top: 125px;
+          p{
+            padding-top: 30px;
+          }
+        }
+        .development{
+          padding-top: 102px;
+          p{
+            padding-top: 28px;
+          }
+        }
+        .product{
+          padding-top: 92px;
+          p{
+            padding-top: 38px;
+            padding-bottom: 87px;
+          }
+        }
   }
 }
 /*----------------------------------------------------------grid--------------------------------------*/
@@ -237,12 +233,31 @@ h3:before{
   .content{
     @include content;
     padding-top: 136px;
-    padding-bottom: 54px;
+    padding-bottom: 56px;
   }
   h3{
     @include h3;
-    top: 114px;
+    top: 123px;
     font-size: 30px;
+    &:after{
+      content:"";
+      background: $color_1;
+      width:235px;
+      height:2px;
+      position:absolute;
+      left:420px;
+      top:13px;
+    }
+
+    &:before{
+      content:"";
+      background:$color_1;
+      width:235px;
+      height:2px;
+      position:absolute;
+      right:420px;
+      top:13px;
+    }
   }
   p{
     @include p;
@@ -255,20 +270,21 @@ h3:before{
 input{
   background: $color_1;
   margin-bottom: 47px;
-  padding: 19px 127px;
+  padding: 19px 134px;
   color:  $color_2;
   font-size: 16px;
   font-weight: 400;
   letter-spacing: 3px;
   outline: none;
   border: 1px solid $color_2;
+  &:active{
+    background: $color_2;
+    color: $color_1;
+    border: 1px solid $color_1;
+  }
 }
 
-input:active{
-  background: $color_2;
-  color: $color_1;
-  border: 1px solid $color_1;
-}
+
 /*------------------------------------------------------footer------------------------------*/
 
 .footer{
@@ -276,11 +292,15 @@ input:active{
   max-width: 322px;
   padding-top: 10px;
   padding-bottom: 59px;
+  margin-left: 41.2%;
   p{
-    padding-left: 33px;
+    padding-left: 26px;
     padding-top: 10px;
     font-size: 14px;
     color: $color_1;
+  }
+  img{
+    margin-right: 10px;
   }
 
 }
