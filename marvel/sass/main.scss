@@ -21,86 +21,84 @@ body{background: #3f444e;}
 
 
 /*********************************************NAV************************************/
-nav{
+nav {
   background: $color_1;
-  margin-top: 206px;
+  margin-top: 203px;
   padding-top: 20px;
-  padding-bottom: 19px;
+  padding-bottom: 23px;
   display: flex;
   justify-content: space-between;
   max-width: 1194px;
-  h4{
+  h4 {
     font-size: 18px;
     padding-top: 5px;
     line-height: 8px;
     display: table-cell;
   }
-}
-
-.logo{
-  margin-left: 37px;
-  img{
-    position: relative;
-    top: 2px;
+  .logo {
+    margin-left: 28px;
+    img {
+      position: relative;
+      top: 2px;
+    }
   }
-}
-
-  li{
+  li {
     position: relative;
     display: inline-block;
-    padding-left: 23px;
+    padding-left: 18px;
     padding-right: 23px;
-    &:last-child{
+    padding-top: 5px;
+    &:last-child {
       padding-right: 0;
     }
-    .red{
+    .red {
       display: none;
       position: absolute;
       background: $color_2;
       border-radius: 5px;
       width: 66px;
       text-align: center;
-      p{
+      &:before{
+        position: absolute;
+        content: '';
+        border: 7px solid transparent;
+        border-bottom: 7px solid $color_2;
+        bottom: 22px;
+        left: 27px;
+      }
+      p {
         text-transform: uppercase;
         color: $color_1;
         font-size: 13px;
         padding: 5px 7px;
       }
     }
-  }
-
-li:hover{
-  .red{
-    display: inline-block;
-    top: 158%;
-    z-index: 1;
-    right: 0;
-    left: 0;
-    background: $color_2;
-    border-radius: 5px;
-    p{
-      text-transform: uppercase;
-      color: $color_1;
-      font-size: 13px;
-      padding: 5px 7px;
-    }
+      &:hover{
+        .red{
+          display: inline-block;
+          top: 160%;
+          z-index: 1;
+          right: 0;
+          left: -6px;
+          background: $color_2;
+          border-radius: 5px;
+          p{
+            text-transform: uppercase;
+            color: $color_1;
+            font-size: 13px;
+            padding: 5px 7px;
+          }
+        }
+      }
   }
 }
 
-.red:before{
-  position: absolute;
-  content: '';
-  border: 7px solid transparent;
-  border-bottom: 7px solid $color_2;
-  bottom: 22px;
-  left: 27px;
-}
 
 .profile{
   position: relative;
   display: flex;
   justify-content: space-around;
-  margin-right: 37px;
+  margin-right: 33px;
   p{
     margin-left: 10px;
     margin-right: 19px;
@@ -108,13 +106,15 @@ li:hover{
     font-size: 15px;
     color: rgb(63,68,78);
   }
-  img:first-child{
-    width: 30px;
-    height: 30px;
-  }
-  img:last-child{
-    height:17px;
-    margin-top: 7px;
+  img{
+    &:first-child{
+      width: 30px;
+      height: 30px;
+    }
+    &:last-child{
+      height:17px;
+      margin-top: 7px;
+    }
   }
   span{
     position: absolute;
@@ -141,7 +141,7 @@ li:hover{
       position: absolute;
       bottom: 171px;
       right: 16%;
-      left: 74%;
+      left: 74.1%;
       input {
         background: $color_2;
         color: $color_1;
@@ -181,30 +181,31 @@ li:hover{
         background: $color_1;
         display: block;
         margin-top: 10px;
+        &:nth-child(2) {
+          margin-top: 22px;
+        }
       }
     }
-      span:nth-child(2) {
-        margin-top: 22px;
-      }
     .rating {
       display: flex;
       position: absolute;
       bottom: 15px;
-      left: 37px;
+      left: 33px;
       p {
         font-size: 17px;
         text-transform: uppercase;
         padding-top: 5px;
-        padding-left: 20px;
-      }
-      p:first-child {
-        padding-left: 0;
-      }
-      p:nth-child(3) {
-        padding-right: 5px;
+        padding-left: 15px;
+        &:first-child {
+          padding-left: 0;
+        }
+        &:nth-child(3) {
+          padding-right: 2px;
+        }
       }
       img {
         margin-top: 8px;
+        margin-left: 3px;
         width: 14px;
         height: 14px;
         display: inline-block;
@@ -218,18 +219,23 @@ li:hover{
     .right{
       display: flex;
       position: absolute;
-      bottom: 15px;
-      right: 37px;
+      bottom: 17px;
+      right: 35px;
       img{
         width: 14px;
         height: 14px;
         display: inline-block;
       }
       p{
-        padding-right:30px;
+        font-size: 14px;
+        padding-right:26px;
         padding-left: 8px;
+        &:nth-child(2){
+          padding-left: 10px;
+        }
         &:last-child{
           padding-right: 0;
+          padding-left: 15px;
         }
       }
     }
@@ -245,10 +251,10 @@ li:hover{
   .search{
     display: flex;
     p{
-      padding-bottom: 24px;
+      padding-bottom: 25px;
       padding-top: 35px;
       &:first-child{
-        margin-left: 37px;
+        margin-left: 34px;
       }
       &:nth-child(2){
         font-family: 'droid_sansregular',sans-serif;
@@ -258,6 +264,7 @@ li:hover{
         margin-left: 14%;
         span{
           color:  #999ca4;
+          padding-left: 15px;
         }
       }
   }
@@ -267,7 +274,7 @@ li:hover{
      font-weight: 400;
      color:  #9b9ea3;
      position: relative;
-     padding-top: 31px;
+     padding-top: 36px;
 
      margin-right: 37px;
      input {
@@ -276,8 +283,8 @@ li:hover{
        border-bottom: 1px solid #9b9ea3;
        font-style: italic;
        &:last-child {
-         top: 31px;
-         right: 8px;
+         top: 32px;
+         right: 3px;
          position: absolute;
          @include input_border;
 
@@ -298,12 +305,12 @@ li:hover{
 }
 .ba-grid > [class*="ba-width-"]{
   float: left;
-  padding-left: 20px;
+  padding-left: 19px;
 }
 
 .grid{
   position: relative;
-  max-width: 1130px;
+  max-width: 1140px;
   img{
     width: 100%;
     display: block;
@@ -315,7 +322,7 @@ li:hover{
 }
 
 .ba-grid + .ba-grid{
-  margin-top: 11px;
+  margin-top: 16px;
 }
 
 .ba-width-1-1{
@@ -349,7 +356,7 @@ li:hover{
     }
     display: flex;
     position: absolute;
-    top: 82%;
+    top: 81%;
     left: 7%;
     right: 5%;
     img{
@@ -364,7 +371,7 @@ li:hover{
       -webkit-box-sizing: border-box;
       -moz-box-sizing: border-box;
       box-sizing: border-box;
-      width: 324px;
+      width: 345px;
       height: 3px;
       line-height: 21px;
       font-size: 15px;
@@ -372,7 +379,7 @@ li:hover{
       text-align: center;
       margin: 0;
       margin-left: 10px;
-      margin-top: 7px;
+      margin-top: 6px;
     }
     ::-webkit-progress-value {
       background: $color_2;
@@ -396,10 +403,12 @@ li:hover{
   border: 4px solid transparent;
 }
 
+
 .hover_border:hover{
   border: 4px solid $color_2;
   border-radius: 10px;
   .download{
+    right: 0;
     top: 0;
     width: 35px;
     height: 35px;
@@ -412,13 +421,18 @@ li:hover{
 
 .iron {
   position: relative;
+ height: 235px;
+  overflow: hidden;
     img{
       border-bottom-right-radius: 5px;
       border-bottom-left-radius: 5px;
+      height: 100%;
+      display: block;
     }
     p{
       left: 15px;
-      top: 81%;
+      top: 84%;
+
     }
 }
 
@@ -453,19 +467,19 @@ li:hover{
      margin-top: 1px;
       }
        p{
-          padding: 0 5px;
+          padding: 0 10px;
        }
  }
 
 .likes {
    display: flex;
-   top: 21px;
+   top: 18px;
    left: 41px;
  }
 
 .download{
    top: 0;
-   right: 0;
+   right: -5px;
    width: 35px;
    height: 35px;
    border-bottom-left-radius: 10px;
@@ -477,7 +491,7 @@ li:hover{
  }
 
 .name{
-   top: 77%;
+   top: 82%;
    left: 38px;
  }
 
@@ -489,11 +503,11 @@ li:hover{
   border-top-left-radius: 5px;
   p {
     font-size: 14px;
-    padding-top: 5px;
+    padding-top:4px;
     margin-left: 16px;
   }
   .release {
-    padding-bottom: 13px;
+    padding-bottom: 20px;
     }
     span {
       font-family: 'droid_sansregular', sans-serif;
@@ -509,7 +523,7 @@ li:hover{
    margin-left:  0;
    display: flex;
    p{
-     margin-top: 4%;
+     margin-top: 4.1%;
 
    }
    img{
@@ -545,7 +559,7 @@ li:hover{
      margin-right: 5px;
    }
    img{
-     margin-left: 2px;
+     margin-left: 4px;
      width: 12px;
      height: 11px;
    }
@@ -588,14 +602,14 @@ display: none;
           opacity: 0.9;
         }
       img {
-        margin-top: 18px;
-        margin-bottom: 18px;
+        margin-top: 16px;
+        margin-bottom: 28px;
 
       }
       .left_download {
         margin-left: 31px;
         img {
-          margin-right: 10px;
+          margin-right: 15px;
           width: 14px;
           height: 14px;
         }
