@@ -1,418 +1,468 @@
+@font-face {
+    font-family: 'aleoregular';
+    src: url('../fonts/aleo-regular-webfont.woff2') format('woff2'),
+    url('../fonts/aleo-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
 * {
     margin: 0 auto;
     padding: 0 0;
     box-sizing: border-box;
+    font-family: 'Josefin Sans', sans-serif;
+    color: #ffffff
 }
-.baner{
-    background: url("../img/baner.png")no-repeat  center;
-    background-size: cover;
-    height: 100vh;
+a{
+    text-decoration: none;
+}
+
+body{
     border: 18px solid white;
-    border-bottom: none;
 }
+
 .container{
-    max-width: 1115px;
+    max-width: 1110px;
     margin: 0 auto;
 }
+h3{
+    font-family: 'aleoregular';
+    font-size: 36px;
+    font-weight: 400;
+}
+
+/********************************banner_1**************************************/
+
+.banner{
+    background: url("../img/banner.png")no-repeat  center;
+    background-size: cover;
+    height: 100vh;
+    border-bottom: none;
+}
+
+h1{
+    margin: 0;
+    font-size: 48px;
+    font-weight: 700;
+    letter-spacing: 5px;
+    text-align: center;
+    text-transform: uppercase;
+    padding-top: 254px;
+}
+
+.banner p{
+    font-size: 22px;
+    letter-spacing: 7px;
+    font-weight: 400;
+    text-align: center;
+    padding-bottom: 48px;
+}
+
 form{
+    position: relative;
     max-width: 656px;
     margin: 0 auto;
     padding-bottom: 113px;
     text-align: center;
 }
-h1{
-    margin: 0;
-    font-family: 'Josefin Sans', sans-serif;
-    color:  #ffffff;
-    font-size: 48px;
-    font-weight: 700;
-    text-align: center;
-    text-transform: uppercase;
-    padding-top: 254px;
-}
-p{
-    font-family: 'Josefin Sans', sans-serif;
-    color:  #ffffff;
-    font-size: 22px;
-    font-weight: 400;
-    text-align: center;
-    padding-bottom: 48px;
-}
-p:last-child{
-    font-family: 'Josefin Sans', sans-serif;
-    color:  #ffffff;
-    font-size: 14px;
-    font-weight: 400;
 
-    text-align: center;
-}
 .search{
-    padding: 22px 127px;
-    font-family: 'Josefin Sans', sans-serif;
+    padding: 22px 101px;
     color:  #999999;
     font-size: 14px;
+    letter-spacing: 2px;
     font-weight: 400;
     border: 2px solid white;
+    width: 500px;
 }
-.button{
+
+.banner .button{
     background: #5474fd;
-    font-family: Aleo;
-    color:  #ffffff;
+    font-family:'aleoregular';
     font-size: 14px;
     font-weight: 400;
     text-align: center;
-    padding:  22px 32px 21px 32px;
+    padding:  22px 48px 22px 32px;
     border: 2px solid white;
     margin-left: -5px;
+}
 
+.button_img{
+    position: absolute;
+    right: 23px;
+    top: 21px;
 }
-/**************************nav******************************/
-.nav{
-    background:#5474fd;
-    border-left: 18px solid white;
-    border-right:18px solid white;
+
+.scroll{
+    position: relative;
+    max-width: 165px;
 }
-.nav li{
-    list-style: none;
-    font-family: Aleo;
-    color:  #ffffff;
+
+.scroll p{
     font-size: 14px;
     font-weight: 400;
-    text-align: left;
-    text-transform:uppercase;
-    display: inline-block;
-    padding-right: 36px;
-
+    letter-spacing: 3px;
+    text-align: center;
 }
-h2{
-    font-family: 'Josefin Sans', sans-serif;
-    color:  #ffffff;
+
+.scroll_img{
+    position: absolute;
+    left: 74px;
+    top:15px;
+}
+
+/***********************************NAV ********************************************/
+.nav{
+    background:#5474fd;
+}
+
+.nav h2{
     font-size: 24px;
     font-weight: 700;
+    letter-spacing: 2px;
     text-align: left;
-    padding-top: 31px;
-    padding-bottom: 31px;
+    padding-top: 29px;
+    padding-bottom: 25px;
     display: inline-block;
-
+    text-transform: uppercase;
 }
+
 .nav ul{
     float: right;
     padding-top: 30px;
 }
+
 main:after{
     content:"";
     display:table;
     width: 100%;
     clear: both;
 }
-/*********************************why_choose_us*************************************/
+
+.nav li{
+    list-style: none;
+    font-family:'aleoregular';
+    font-size: 14px;
+    font-weight: 400;
+    text-align: left;
+    text-transform:uppercase;
+    display: inline-block;
+    padding-right: 10px;
+    padding-left: 27px;
+}
+/*********************************why_choose_us*************************************************/
 
 .why_choose_us{
-    background: url("../img/baner_2.png") center no-repeat;
+    background: url("../img/banner_2.png") center no-repeat;
     background-size: cover;
-    border-left: 18px solid white;
-    border-right:18px solid white;
 }
-.container_grid{
-    padding-top: 112px;
+
+.choose_container{
+    padding-top: 122px;
     padding-bottom: 116px;
+    display: flex;
 }
+
+.why_choose_us h3{
+    text-align: left;
+    padding-top: 80px;
+    padding-bottom: 53px;
+}
+
+.why_choose_us p{
+    font-size: 16px;
+    font-weight: 100;
+    line-height: 26px;
+    letter-spacing: 2px;
+    text-align: left;
+    margin: 0;
+}
+
+.why_choose_us p:nth-child(2){
+    padding-bottom: 27px;
+}
+
+.choose_text{
+    flex-grow: 1;
+    flex-basis: 50%;
+    margin: 0;
+}
+
 .why_choose_us .button{
-    padding: 15px 36px ;
-    opacity: 0.7;
-    font-family: Aleo;
-    color:  #ffffff;
+    padding: 18px 36px 17px 40px;
+    font-family:'aleoregular';
     font-size: 16px;
     font-weight: 400;
     line-height: 26px;
+    letter-spacing: 1px;
     text-align: left;
     text-transform: uppercase;
-
+    border: none;
+    margin-top: 42px;
+    margin-left: 0;
+    background: linear-gradient(45deg, #496bfe 38%,#5474fd 10%);
 }
 
 .why_choose_us img{
     max-width: 350px;
    min-height: 220px;
-
-}
-.why_choose_us p{
-    font-family: 'Josefin Sans', sans-serif;
-    color:  #e8e8e8;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 26px;
-    text-align: left;
-}
-.why_choose_us p:nth-child(2){
-    padding-bottom: 37px;
-}
-.why_choose_us h3{
-    font-family: Aleo;
-    color:  #ffffff;
-    font-size: 36px;
-    font-weight: 400;
-    text-align: left;
-    padding-top: 70px;
-    padding-bottom: 65px;
-}
-img{
-    width: 100%;
-    display: block;
-}
-.ba-grid:after {
-    content: '';
-    display: table;
-    clear: both;
-}
-[class*="ba-width"] {
-    width: 100%;
-
-}
-.ba-grid > [class*="ba-width_"] {
-    float: left;
-    padding-left: 19px;
-
-}
-.ba-grid {
-    margin-left: -20px;
-
 }
 
-.ba-grid + .ba-grid {
-    margin-top: 16px;
+.choose_img{
+    flex-grow: 1;
+    flex-basis: 50%;
+    padding-left: 5%;
+    margin: 0;
 }
 
-.ba-width_1_2 {
-    width: 50%;
-
-}
-.ba-width_1{
-    width: 100%;
-}
-.container_img_1{
-padding-right: 87px;
-    height: 100%;
-
-}
 .container_img_2{
-    padding-left: 87px;
-    height: 100%;
+   text-align: right;
 }
-/***********************************************************************/
+/******************************places*****************************************/
+.places{
+    background: #333333;
+    text-align: center;
+}
+
+.select_container{
+    padding-bottom:118px;
+    padding-top: 42px;
+}
+
+.places p{
+    font-family: 'aleoregular';
+    font-size: 36px;
+    font-weight: 100;
+    line-height: 26px;
+    text-align: center;
+    padding-top: 47px;
+}
+
+.places section{
+    display: inline-block;
+}
+
 span{
     width: 96px;
     height: 96px;
     border-radius: 50%;
-   background: grey;
+   background: #2d2d2d;
     display: inline-block;
 }
-.icon_container {
+
+.stripes{
+    max-width: 774px;
+}
+
+[class*=icon_container] {
     margin: 0;
+    position: relative;
 }
-.places{
-    background: #333333;
-    border-left: 18px solid white;
-    border-right:18px solid white;
+
+.icon_container_1{
+    margin-left: -7px;
 }
-.places section{
-    /*max-width: 96px;*/
-    /*max-height: 96px;*/
-    display: inline-block;
-    border-radius: 90%;
-    background: #333333;
+
+.icon_container-2{
+    margin-left: 15%;
 }
-.places img{
+
+.icon_container_3{
+    margin-left:15%;
+}
+
+[class*=ellips]{
+    position: absolute;
+    bottom: 35px;
+}
+
+.ellipse_1{
+    left: 62px;
+}
+
+.ellipse_2{
+    left: 53px;
+}
+
+.ellipse_3{
+   left: 59px;
+}
+
+span img{
+    margin-top: 15px;
     display: block;
 }
-.places_dots{
-    display: flex;
-}
-.stripes{
-    padding-top: 42px;
+/*******************************************************banner_3********banner_4*********************/
 
-}
-section p{
-    font-family: Aleo;
-    color:  #e8e8e8;
-    font-size: 36px;
-    font-weight: 400;
-    line-height: 26px;
-    text-align: center;
-}
-/*******************************************************baner_3*****************************/
-.baner_3{
-    background: url("../img/baner_3.png") no-repeat center;
+.banner_3{
+    background: url("../img/banner_3.png") no-repeat center;
     background-size: cover;
-    border-left: 18px solid white;
-    border-right:18px solid white;
-    text-align: left;
 }
- .grey_box{
+
+.banner_4{
+    background: url("../img/banner_4.png") no-repeat center;
+    background-size: cover;
+}
+
+.banner_box{
+    padding-top: 229px;
+    padding-bottom: 101px;
+}
+
+.grey_box{
     max-width: 540px;
     text-align: left;
      background:rgba(33, 32, 33, 0.8);
      margin: 0 auto;
+    padding-left: 32px;
+    padding-right: 26px;
 }
- .baner_box{
-     padding-top: 226px;
-     padding-bottom: 91px;
- }
 
-.grey_box p{
-    text-align: left;
-}
-/*******************************baner_4***********************************/
-.baner_4{
-    background: url("../img/baner_4.png") no-repeat center;
-    background-size: cover;
-    border-left: 18px solid white;
-    border-right:18px solid white;
-}
 .grey_box h5{
-    font-family: 'Josefin Sans', sans-serif;
-    color:  #e8e8e8;
     font-size: 20px;
     font-weight: 400;
+    line-height: 26px;
+    text-align: left;
+    padding-top: 44px;
+    padding-bottom: 22px;
+}
+.grey_box h4{
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 26px;
+    text-align: left;
+    padding-bottom: 20px;
+    text-transform: uppercase;
+}
+.grey_box p{
+    font-size: 16px;
+    font-weight: 100;
+    line-height: 26px;
+    text-align: left;
+    padding-bottom: 44px;
+
+}
+.grey_box .button{
+    font-family: 'aleoregular';
+    font-size: 16px;
+    font-weight: 400;
+    text-align: left;
+    text-transform: uppercase;
+    padding: 21px 71px 21px 61px;
+    border: none;
+    margin-bottom: 49px;
+    background: linear-gradient(45deg, #496bfe 38%,#5474fd 10%);
+}
+
+.banner_3 .grey_box{
+    margin-left: 0 ;
+}
+.banner_4 .grey_box{
+    margin-right: 0;
+}
+
+/************************************reviews*********************************/
+.reviews{
+    background: url("../img/banner_5.png") no-repeat center;
+    background-size: cover;
+    text-align: center;
+}
+
+.reviews h3{
+    text-align: center;
+    padding-top: 117px;
+    text-transform: capitalize;
+}
+
+.reviews p{
+    font-size: 16px;
+    font-weight: 100;
     line-height: 26px;
     text-align: left;
     padding-top: 39px;
-    padding-bottom: 28px;
+    text-indent: 2.2em;
 }
-.grey_box h4{
-    font-family: 'Josefin Sans', sans-serif;
-    color:  #ffffff;
-    font-size: 20px;
-    font-weight: 400;
-    line-height: 26px;
-    text-align: left;
-    padding-bottom: 35px;
-}
-.grey_box p{
-    font-family: 'Josefin Sans', sans-serif;
-    color:  #e8e8e8;
-    font-size: 16px;/* Approximation due to font substitution */
-    font-weight: 400;
-    line-height: 26px;/* Approximation due to font substitution */
-    text-align: left;
-    padding-bottom: 49px;
-}
-.grey_box .button{
-    margin-bottom: 43px;
-    font-family: Aleo;
-    color:  #ffffff;
-    font-size: 16px;/* Approximation due to font substitution */
-    font-weight: 400;
-    /*line-height: 26px;!* Approximation due to font substitution *!*/
-    text-align: left;
-    text-transform: uppercase;
-    padding: 24px 57px;
-    border: none;
-}
-.baner_3 .grey_box{
-    margin-left: 0 ;
-}
-.baner_4 .grey_box{
-    margin-right: 0;
-}
-.grey_ins{
-    padding-left: 32px;
-}
-/************************************sumon*********************************/
-.sumon{
-    background: url("../img/baner_5.png") no-repeat center;
-    background-size: cover;
-    border-left: 18px solid white;
-    border-right:18px solid white;
-    text-align: center;
-}
-.sumon h2{
-    font-family: Aleo;
-    color:  #ffffff;
-    font-size: 36px;
-    font-weight: 400;
-    line-height: 26px;
-    text-align: center;
-    padding-top: 117px;
 
-}
-.sumon p{
-    font-family: 'Josefin Sans', sans-serif;
-    color:  #e8e8e8;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 26px;
-    text-align: left;
-    padding-top: 48px;
-    padding-bottom: 40px;
-}
-.sumon h5{
-    font-family: 'Josefin Sans', sans-serif;
-    color:  #fefefe;
+.reviews h5{
     font-size: 20px;
     font-weight: 400;
     line-height: 26px;
     text-align: left;
-    padding-top: 51px;
+    padding-top:45px;
+    text-transform: uppercase;
 }
+
 .sam_sumon{
     display: flex;
     background: #333333;
 }
-.sumon_box{
-    padding-bottom: 195px;
-    padding-top: 95px;
+
+.reviews_box{
+    padding-bottom: 197px;
+    padding-top: 91px;
 }
-.sumon_text{
-    padding-left: 61px;
-    padding-right: 47px;
+
+.reviews_text{
+    width: 60%;
+    padding-left: 60px;
+    padding-right: 29px;
+    position: relative;
 }
-.sumon_img{
-    width: 45%;
+
+.reviews_img{
+    width: 40%;
 }
-.sumon_text{
-    width: 55%;
+
+.reviews_img img{
+    width: 100%;
+    display: block;
 }
+
+.quote{
+    position: absolute;
+    top: 98px;
+}
+
+.quote i{
+    color: #5474fd;
+    font-size: 21px
+}
+
 /*********************************footer***********************************/
 .footer{
     background: #232323;
-    border-left: 18px solid white;
-    border-right:18px solid white;
-    border-bottom: 18px solid white;
     text-align: center;
 }
+
 .footer h6{
-    font-family: 'Josefin Sans', sans-serif;
-    color:  #ffffff;
     font-size: 24px;
     font-weight: 700;
     line-height: 26px;
-    padding-top: 114px;
+    padding-top: 126px;
     text-transform: uppercase;
+    letter-spacing: 3px;
 }
+
 .footer p{
-    font-family: 'Josefin Sans', sans-serif;
-    color:  #ffffff;
     font-size: 16px;
     font-weight: 400;
     line-height: 26px;
     padding-bottom: 20px;
 }
+
 .footer li{
     display: inline-block;
-    font-family: FontAwesome;
-    color:  #e8e8e8;
     font-size: 16px;
     font-weight: 400;
     line-height: 26px;
-    padding-right: 14px;
-    padding-left: 14px;
+    padding-right: 7px;
+    padding-left: 12px;
 }
-a{
-    color:  #e8e8e8;
-}
-a:hover{
+
+.footer i:hover{
     color: #5474fd;
 }
+
 .contact_list{
     padding-bottom: 48px;
 }
