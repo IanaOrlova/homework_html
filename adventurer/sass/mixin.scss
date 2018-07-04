@@ -1,0 +1,21 @@
+@mixin grid{
+  .ba-grid:after {
+    content: '';
+    display: table;
+    clear: both;
+  }
+  [class*="ba-width"] {
+    width: 100%;
+
+  }
+  .ba-grid > [class*="ba-width_"] {
+    float: left;
+  }
+  .ba-grid {
+    margin-left: -20px;
+  }
+
+  .ba-grid + .ba-grid {
+    margin-top: 16px;
+  }
+}
