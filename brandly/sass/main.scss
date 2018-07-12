@@ -118,6 +118,11 @@ img{
   }
   .hover_text{
     position: relative;
+    &:hover{
+      .hover_grey{
+        display: none;
+      }
+    }
     .hover_grey{
       position: absolute;
       background-color: rgba(34, 37, 51, 0.5);
