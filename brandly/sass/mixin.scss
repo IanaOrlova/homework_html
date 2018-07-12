@@ -1,0 +1,32 @@
+@import "vr";
+
+@mixin before{
+  content:"";
+  background:$colorTwo;
+  width:118px;
+  height:3px;
+  position:absolute;
+  left:46.8%;
+  top:54px;
+}
+@mixin after{
+  content:"";
+  background:$colorTwo;
+  width:118px;
+  height:3px;
+  position:absolute;
+  left:46.8%;
+  bottom:60px;
+}
+
+@mixin h4{
+  font-family: "Open Sans", sans-serif;
+  color: #333333;
+  font-size: 40px;
+  font-style: italic;
+  transform: scaleY(1.0007);
+  text-align: center;
+  padding-top: 80px;
+  padding-bottom: 86px;
+  font-weight: lighter;
+}
